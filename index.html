@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP下载</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            min-height: 100vh;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(135deg, #232946, #121420);
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .card {
+            background-color: rgba(255,255,255,0.08);
+            backdrop-filter: blur(12px);
+            border-radius: 20px;
+            padding: 48px 36px;
+            max-width: 460px;
+            width: 100%;
+            text-align: center;
+            border:1px solid rgba(255,255,255,0.12);
+        }
+        .icon-box{
+            width:90px;
+            height:90px;
+            margin:0 auto 24px;
+            background:#3b82f6;
+            border-radius:20px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-size:42px;
+        }
+        h1 {
+            font-size:28px;
+            margin-bottom:12px;
+        }
+        .desc{
+            color:#cccccc;
+            font-size:15px;
+            margin-bottom:36px;
+            line-height:1.6;
+        }
+        .download-btn{
+            display:block;
+            text-decoration:none;
+            background: linear-gradient(90deg,#2563eb,#4f46e5);
+            color:#fff;
+            font-size:18px;
+            font-weight:500;
+            padding:16px;
+            border-radius:14px;
+            transition: 0.25s ease all;
+        }
+        .download-btn:hover{
+            transform: translateY(-3px);
+            box-shadow: 0 8px 22px rgba(63,99,235,0.4);
+        }
+        .tip-text{
+            margin-top:28px;
+            font-size:13px;
+            color:#949494;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <div class="icon-box">📱</div>
+    <h1>安卓APP安装包</h1>
+    <p class="desc">点击下方按钮即可下载APK安装包<br>安装前请允许未知来源应用权限</p>
+    <!-- =========这里修改apk文件名========== -->
+    <a class="download-btn" href="./shanghai.apk" download="myapp.apk">
+        📥 立即下载 APK
+    </a>
+    <p class="tip-text">托管于 Github Pages · 如下载缓慢请切换网络</p>
+</div>
+</body>
+</html>
